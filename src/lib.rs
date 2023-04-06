@@ -40,7 +40,7 @@ mod tests {
           len: 0
       };
 
-      for i in 1..22 {
+      for i in 1..=22 {
         let k = i.to_string();
         let v =  i.to_string();
 
@@ -54,7 +54,7 @@ mod tests {
     fn bench_hashmap(b: &mut Bencher) {
       let mut hashmap = HashMap::new();
 
-      for i in 1..22 {
+      for i in 1..=22 {
           let k = i.to_string();
           let v =  i.to_string();
 
